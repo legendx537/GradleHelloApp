@@ -1,0 +1,32 @@
+We have used gradle version : 6.9.2
+===================================================================
+
+Please use compatible jdk for gradle version :-
+
+like jdk-1.8 support gradle 6.9.2 but jdk 17 does not
+===================================================================
+Same is the gradle plugin, use compatible version of plugin or use toolVersion to upgrade the same
+
+like org.gretty 3.0.3 is ok with gradle 6.9.2
+but org.gretty 4.0.3 is not ok with gradle 6.9.2
+
+using toolVersion we can make plugin compatible with the java version.
+
+===================================================================
+
+** Remember when we build the project from the terminal, the jdk installed in the system will be used.
+   that might create some problem in running some task.
+
+   To use different jdk for build.gradle, you change the jdk for the gradle in the IntelliJ IDEA settings.
+
+   Alternatively, we can upgrade or downgrade gradle accordingly
+   Or we can downgrade java version globally or update accordingly
+===================================================================
+
+Also remember to sonar with a compatible version: -
+
+like sonar 10 uses jdk 17 , so use jdk 17 and not any other version.
+
+refer to Sonar documentation for the java version compatibility.
+===================================================================
+
